@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_margin="10dp"
+       android:id="@+id/txtq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="textview"
+        />
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RadioButton
+    android:id="@+id/rd1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <RadioButton
+        android:id="@+id/rd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioButton
+        android:id="@+id/rd3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/btnnex"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="95dp"
+            android:onClick="next"
+            android:text="next" />
+
+        <Button
+            android:id="@+id/btnprev"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:onClick="prev"
+            android:text="previous" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btnfin"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:text="finish"
+        android:onClick="fin"/>
+
+</LinearLayout>
